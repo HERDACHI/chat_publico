@@ -1,0 +1,15 @@
+# Dependencias de Node.js
+chat/node_modules
+server/node_modules
+
+# Archivos de compilación
+chat/build
+chat/dist
+server/build
+server/dist
+
+# Archivos de configuración
+.env
+
+# Archivos de registro
+*.log
