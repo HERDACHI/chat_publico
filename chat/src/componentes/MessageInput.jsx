@@ -8,6 +8,12 @@ const MessageInput = ({ onSendMessage, nick }) => {
     setMessage(e.target.value);
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSubmitClick();
+    }
+  };
+
   const handleSubmitClick = () => {
     if (message.trim() !== '') {
       const now = new Date();
@@ -44,6 +50,7 @@ const MessageInput = ({ onSendMessage, nick }) => {
         placeholder="Escribe un mensaje..."
         value={message}
         onChange={handleInputChange}
+        onKeyPress={handleKeyPress}
       />
       <button onClick={handleSubmitClick}>Enviar</button>
       <button onClick={handleLogoutClick}>Cerrar sesión</button>
