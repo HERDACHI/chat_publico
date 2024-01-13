@@ -16,7 +16,7 @@ Para instalar la aplicación, sigue estos pasos:
 
 Para usar la aplicación, sigue estos pasos:
 
-1. Abre un navegador web y navega hasta `http://localhost:3001`.
+1. Abre un navegador web y navega hasta `http://localhost:3000`.
 2. Ingresa un apodo y haz clic en "Iniciar chat".
 3. Escribe un mensaje en la caja de texto y haz clic en "Enviar" para enviar el mensaje.
 
