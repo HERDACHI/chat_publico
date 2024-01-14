@@ -10,10 +10,10 @@ const MessageList = ({ messages, currentUser }) => {
   return (
     <div className="message-list" ref={messageListRef}>
       {messages.map(({ id, sender, content, timestamp }) => {
+        //Crear nombre de la clase Mensaje dinámico.
         let messageClass = "";
         (sender == currentUser) ? messageClass = 'current-user' : messageClass = 'message';
         return (
-
           <div key={id} className={messageClass}>
             <span className="sender">{sender}</span>
             <p className="message-content">{content}</p>
