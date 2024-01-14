@@ -38,6 +38,22 @@ body {
   padding: 10px;
   background-color: #f0f0f0;
   border-radius: 5px;
+  word-wrap: break-word;
+  width: 50%;
+  height: fit-content;
+}
+
+/* Estilos para los mensajes del usuario actual */
+.current-user {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: hsl(56, 79%, 81%);
+  border-radius: 5px;
+  width: 50%;
+  margin-left: auto;
+  text-align: left;
+  word-wrap: break-word;
+  height: fit-content;
 }
 
 /* Estilos para el área de entrada de mensajes */
@@ -99,12 +115,3 @@ body {
   padding: 10px 20px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-  

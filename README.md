@@ -10,7 +10,8 @@ Para instalar la aplicación, sigue estos pasos:
 2. Navega hasta la carpeta raíz del proyecto en la terminal.
 3. Ejecuta el comando `npm install` para instalar todas las dependencias necesarias.
 4. Crea una base de datos MySQL llamada `db_chat`.
-5. Ejecuta el archivo `Server.js` para iniciar el servidor.
+5. Ejecuta el archivo `server.js` ubicado en "servidor" para iniciar el servidor.
+6. Ejecuta el comando npm run start dentro de "chat" para iniciar el chat.
 
 ## Uso
 

@@ -49,6 +49,20 @@ app.get('/mensajes', (req, res) => {
     });
 });
 
+// Obtener el número de mensajes existentes
+app.get('/mensajes/count', (req, res) => {
+    connection.query('SELECT COUNT(*) AS totalMensajes FROM mensajes', (error, results, fields) => {
+        if (error) {
+            console.error('Error al obtener el número de mensajes:', error);
+            res.status(500).send('Error al obtener el número de mensajes.');
+        } else {
+            const totalMensajes = parseInt(results[0].totalMensajes);
+            console.log(`Número total de mensajes: ${totalMensajes}`);
+            res.send({totalMensajes});
+        }
+    });
+});
+
 // Insertar un nuevo mensaje
 app.post('/mensajes', (req, res) => {
     const nuevoMensaje = req.body;
